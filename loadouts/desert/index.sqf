@@ -10,6 +10,7 @@ rols_icons_path = "loadouts\assets\rols\";
 weapons_icons_path = "loadouts\assets\weapons\";
 
 LoadoutBoxs = _this select 0;
+//  test
 
 // [loadout_box,0,["ACE_MainActions"]] call ace_interact_menu_fnc_removeActionFromClass;
 
