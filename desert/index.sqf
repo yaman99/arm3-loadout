@@ -14,6 +14,7 @@ LoadoutBoxs = _this select 0;
 
 // [loadout_box,0,["ACE_MainActions"]] call ace_interact_menu_fnc_removeActionFromClass;
 
+//start for Each
 {
 	_uniforms = ["uniforms" , "Uniforms" , "", {} ,{true}] call ace_interact_menu_fnc_createAction;
 	[_x , 0 ,["ACE_MainActions"] , _uniforms , true] call ace_interact_menu_fnc_addActionToClass;
