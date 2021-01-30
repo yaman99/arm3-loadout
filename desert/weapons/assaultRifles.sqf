@@ -28,8 +28,9 @@ SCAR = [
 		]
 	],
 	[
-		"rhsusf_acc_anpeq15side",
-		"rhsusf_acc_grip3"
+		"rhsusf_acc_anpeq15side_bk",
+		"rhsusf_acc_grip3",
+		"rhsusf_acc_aac_762sdn6_silencer"
 	],
 	[
 		// null to backpack
@@ -47,8 +48,9 @@ M4A1 = [
 		]
 	],
 		[
-			"rhsusf_acc_anpeq15side",
-			"rhsusf_acc_grip3"
+			"rhsusf_acc_anpeq15side_bk",
+			"rhsusf_acc_grip3",
+			"rhsusf_acc_nt4_black"
 		]
 		,
 	[
@@ -66,8 +68,9 @@ M16 = [
 		]
 	],
 	[
-		"rhsusf_acc_anpeq15side",
-		"rhsusf_acc_grip3"
+		"rhsusf_acc_anpeq15side_bk",
+		"rhsusf_acc_grip3",
+		"rhsusf_acc_nt4_black"
 	]
 	,
 	[
@@ -85,8 +88,9 @@ HK416 = [
 		]
 	],
 	[
-		"rhsusf_acc_anpeq15side",
-		"rhsusf_acc_grip3"
+		"rhsusf_acc_anpeq15side_bk",
+		"rhsusf_acc_grip3",
+		"rhsusf_acc_nt4_black"
 	]
 	,
 	[
@@ -104,8 +108,9 @@ GRENADIER = [
 		]
 	],
 	[
-		"rhsusf_acc_anpeq15side",
-		"rhsusf_acc_grip3"
+		"rhsusf_acc_anpeq15side_bk",
+		"rhsusf_acc_grip3",
+		"rhsusf_acc_nt4_black"
 	],
 	[
 		"rhs_mag_M433_HEDP",
@@ -136,3 +141,5 @@ switch (_condition) do {
     case "GRENADIER": { [GRENADIER] execVM "loadouts\addLoadout.sqf";};
     default { hint "default" };
 };
+
+

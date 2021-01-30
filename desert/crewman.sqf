@@ -22,6 +22,10 @@ for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_elasticBandage";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_quikclot";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_morphine";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "rhsusf_mag_40Rnd_46x30_FMJ";};
+for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_splint";};
+for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_CableTie";};
+_unit addItemToBackpack "ACE_EntrenchingTool";
+_unit addItemToBackpack "ACE_IR_Strobe_Item";
 _unit addItemToBackpack "ToolKit";
 _unit addItemToBackpack "ACE_EarPlugs";
 _unit addHeadgear "rhsusf_cvc_alt_helmet";
@@ -31,3 +35,6 @@ _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "tf_microdagr";
 _unit linkItem "tf_anprc152_7";
+_unit linkItem "rhsusf_ANPVS_15";
+
+

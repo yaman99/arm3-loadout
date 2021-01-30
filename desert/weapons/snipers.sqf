@@ -33,7 +33,7 @@ m14ebrri = [
 		]
 	],
 		[
-			"rhsusf_acc_anpeq15side",
+			"rhsusf_acc_anpeq15side_bk",
 			"rhsusf_acc_harris_bipod"
 		],
 	[
@@ -51,8 +51,9 @@ sr25 = [
 		]
 	],
 		[
-			"rhsusf_acc_anpeq15side",
-			"rhsusf_acc_harris_bipod"
+			"rhsusf_acc_anpeq15side_bk",
+			"rhsusf_acc_harris_bipod",
+			"rhsusf_acc_aac_scarh_silencer"
 		],
 	[
 		// null to backpack
@@ -68,3 +69,4 @@ switch (_condition) do {
     case "sr25": { [sr25] execVM "loadouts\addLoadout.sqf";};
     default { hint "default" };
 };
+

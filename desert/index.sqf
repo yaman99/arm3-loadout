@@ -64,7 +64,6 @@ LoadoutBoxs = _this select 0;
 	// eng classes
 	_engClasess = ["engClasses" , "Eng Classes" , "", {} ,{true}] call ace_interact_menu_fnc_createAction;
 	[_x , 0 ,["ACE_MainActions", "uniforms"] , _engClasess , true] call ace_interact_menu_fnc_addActionToClass;
-		// anti air
 
 		// Sapper (explosive)
 		_sapper = ["SAPPER" , "Sapper" , rols_icons_path+"Icon_Sapper_kit.paa" , { execVM format ["%1sapper.sqf", rols_path]} ,{true}] call ace_interact_menu_fnc_createAction;
@@ -74,10 +73,12 @@ LoadoutBoxs = _this select 0;
 		_crewman = ["CREWMAN" , "Crewman" , rols_icons_path+"Icon_Crewman_kit.paa" , { execVM format ["%1crewman.sqf", rols_path]} ,{true}] call ace_interact_menu_fnc_createAction;
 		[_x , 0 ,["ACE_MainActions","uniforms" , "engClasses"] , _crewman , true] call ace_interact_menu_fnc_addActionToClass;
 
+		// Pilot
 		_Pilot = ["Pilot" , "Pilot" , rols_icons_path+"Icon_Pilot.paa" , { execVM format ["%1pilot.sqf", rols_path]} ,{true}] call ace_interact_menu_fnc_createAction;
 		[_x , 0 ,["ACE_MainActions","uniforms" , "engClasses"] , _Pilot , true] call ace_interact_menu_fnc_addActionToClass;
 		// UAV
-
+		_UAV = ["UAV" , "UAV" , rols_icons_path+"Icon_UAV_Kit.paa" , { execVM format ["%1UAV.sqf", rols_path]} ,{true}] call ace_interact_menu_fnc_createAction;
+		[_x , 0 ,["ACE_MainActions","uniforms" , "engClasses"] , _UAV , true] call ace_interact_menu_fnc_addActionToClass;
 
 /*
 __________________________________________WEAPONS_________________________________________________________________________________________________________________________________________________________
@@ -212,11 +213,23 @@ _scopes = ["SCOPES" , "Scopes" , format ["%1scopes.paa", weapons_icons_path], {}
 
 		_rhsusf_acc_M8541_Icon = getText (configfile >> "CfgWeapons" >> "rhsusf_acc_M8541" >> "picture");
 		_rhsusf_acc_LEUPOLDMK4_2_Icon = getText (configfile >> "CfgWeapons" >> "rhsusf_acc_LEUPOLDMK4_2" >> "picture");
+		_rhsusf_acc_premier_low_Icon = getText (configfile >> "CfgWeapons" >> "rhsusf_acc_premier_low" >> "picture");
+		_rhsusf_acc_LEUPOLDMK4_Icon = getText (configfile >> "CfgWeapons" >> "rhsusf_acc_LEUPOLDMK4" >> "picture");
+		_optic_LRPS_Icon = getText (configfile >> "CfgWeapons" >> "optic_LRPS" >> "picture");
 
 		_rhsusf_acc_M8541 = ["_rhsusf_acc_M8541" , "M8541" , _rhsusf_acc_M8541_Icon , { ["ATTACHMENT" , "rhsusf_acc_M8541"] execVM loadoutFunction_path} ,{true}] call ace_interact_menu_fnc_createAction;
 		[_x , 0 ,["ACE_MainActions" , "SCOPES" , "SNIPERSCOPES"] , _rhsusf_acc_M8541 , true] call ace_interact_menu_fnc_addActionToClass;
 
 		_rhsusf_acc_LEUPOLDMK4_2 = ["_rhsusf_acc_LEUPOLDMK4_2" , "LEUPOLDMK" , _rhsusf_acc_LEUPOLDMK4_2_Icon , { ["ATTACHMENT" , "rhsusf_acc_LEUPOLDMK4_2"] execVM loadoutFunction_path} ,{true}] call ace_interact_menu_fnc_createAction;
 		[_x , 0 ,["ACE_MainActions" , "SCOPES" , "SNIPERSCOPES"] , _rhsusf_acc_LEUPOLDMK4_2 , true] call ace_interact_menu_fnc_addActionToClass;
+
+		_rhsusf_acc_premier_low = ["_rhsusf_acc_premier_low" , "LEUPOLDMK" , _rhsusf_acc_premier_low_Icon , { ["ATTACHMENT" , "rhsusf_acc_premier_low"] execVM loadoutFunction_path} ,{true}] call ace_interact_menu_fnc_createAction;
+		[_x , 0 ,["ACE_MainActions" , "SCOPES" , "SNIPERSCOPES"] , _rhsusf_acc_premier_low , true] call ace_interact_menu_fnc_addActionToClass;
+
+		_rhsusf_acc_LEUPOLDMK4 = ["_rhsusf_acc_LEUPOLDMK4" , "LEUPOLDMK" , _rhsusf_acc_LEUPOLDMK4_Icon , { ["ATTACHMENT" , "rhsusf_acc_LEUPOLDMK4"] execVM loadoutFunction_path} ,{true}] call ace_interact_menu_fnc_createAction;
+		[_x , 0 ,["ACE_MainActions" , "SCOPES" , "SNIPERSCOPES"] , _rhsusf_acc_LEUPOLDMK4 , true] call ace_interact_menu_fnc_addActionToClass;
+
+		_optic_LRPS = ["_optic_LRPS" , "LEUPOLDMK" , _optic_LRPS_Icon , { ["ATTACHMENT" , "optic_LRPS"] execVM loadoutFunction_path} ,{true}] call ace_interact_menu_fnc_createAction;
+		[_x , 0 ,["ACE_MainActions" , "SCOPES" , "SNIPERSCOPES"] , _optic_LRPS , true] call ace_interact_menu_fnc_addActionToClass;
 
 } forEach LoadoutBoxs;

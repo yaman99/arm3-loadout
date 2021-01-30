@@ -40,9 +40,12 @@ _unit addItemToBackpack "ACE_microDAGR";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_personalAidKit";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_salineIV_500";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_salineIV_250";};
-for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_splint";};
-for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_packingBandage";};
-for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_tourniquet";};
+for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_splint";};
+for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_packingBandage";};
+for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_tourniquet";};
+for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_CableTie";};
+_unit addItemToBackpack "ACE_EntrenchingTool";
+_unit addItemToBackpack "ACE_IR_Strobe_Item";
 _unit addItemToBackpack "ACE_surgicalKit";
 _unit addHeadgear "rhsusf_lwh_helmet_marpatd_headset";
 
@@ -50,4 +53,5 @@ _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 _unit linkItem "tf_anprc152_5";
+_unit linkItem "rhsusf_ANPVS_15";
 

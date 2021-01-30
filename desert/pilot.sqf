@@ -22,7 +22,10 @@ _unit addHandgunItem "rhsusf_mag_15Rnd_9x19_FMJ";
 
 _unit forceAddUniform "U_B_HeliPilotCoveralls";
 _unit addBackpack "B_Parachute";
-
+for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_splint";};
+for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_CableTie";};
+_unit addItemToBackpack "ACE_EntrenchingTool";
+_unit addItemToBackpack "ACE_IR_Strobe_Item";
 _unit addItemToUniform "rhsusf_ANPVS_14";
 _unit addItemToUniform "ACE_fieldDressing";
 _unit addItemToUniform "ACE_packingBandage";
@@ -36,3 +39,4 @@ _unit linkItem "ItemCompass";
 _unit linkItem "tf_microdagr";
 _unit linkItem "tf_anprc152_1";
 _unit linkItem "ItemGPS";
+_unit linkItem "rhsusf_ANPVS_15";

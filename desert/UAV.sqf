@@ -1,7 +1,7 @@
 
 _unit = player;
 
-["RIFLEMAN"] execVM "loadouts\unitTraitUpdater.sqf";
+["UavHacker"] execVM "loadouts\unitTraitUpdater.sqf";
 
 
 removeAllWeapons _unit;
@@ -46,3 +46,4 @@ _unit linkItem "ItemWatch";
 _unit linkItem "tf_anprc152_2";
 _unit linkItem "ItemGPS";
 _unit linkItem "rhsusf_ANPVS_15";
+_unit linkItem "B_UavTerminal";

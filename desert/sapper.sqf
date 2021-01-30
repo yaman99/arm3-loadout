@@ -31,7 +31,10 @@ for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_elasticBandage";};
 for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_quikclot";};
 _unit addItemToBackpack "ACE_microDAGR";
 for "_i" from 1 to 2 do {_unit addItemToBackpack "ACE_morphine";};
-_unit addItemToBackpack "ACE_splint";
+for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_splint";};
+for "_i" from 1 to 5 do {_unit addItemToBackpack "ACE_CableTie";};
+_unit addItemToBackpack "ACE_EntrenchingTool";
+_unit addItemToBackpack "ACE_IR_Strobe_Item";
 _unit addItemToBackpack "ACE_EarPlugs";
 _unit addItemToBackpack "ACE_Clacker";
 _unit addItemToBackpack "ACE_wirecutter";
@@ -46,5 +49,5 @@ _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 _unit linkItem "tf_anprc152_2";
+_unit linkItem "rhsusf_ANPVS_15";
 
-[_unit,"WhiteHead_01","ace_novoice"] call BIS_fnc_setIdentity;

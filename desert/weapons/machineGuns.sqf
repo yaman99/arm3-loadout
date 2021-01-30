@@ -37,8 +37,9 @@ _m240b = [
 		]
 	],
 	[
-		"rhsusf_acc_anpeq15side",
-		"rhsusf_acc_elcan_ard_3d"
+		"rhsusf_acc_anpeq15side_bk",
+		"rhsusf_acc_elcan_ard_3d",
+		"rhsusf_acc_ARDEC_M240"
 	],
 	[
 		// null to backpack
@@ -55,8 +56,9 @@ _m249 = [
 		]
 	],
 	[
-		"rhsusf_acc_anpeq15side",
-		"rhsusf_acc_saw_bipod"
+		"rhsusf_acc_anpeq15side_bk",
+		"rhsusf_acc_saw_bipod",
+		"rhsusf_acc_nt4_black"
 	],
 	[
 		// null to backpack
